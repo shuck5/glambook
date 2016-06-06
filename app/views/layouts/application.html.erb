@@ -7,8 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="navbar navbar-fixed-top navbar-light" style="background-color: turquoise;">
+    <ul class="nav">
+      <li><a class="navbar-brand" href="#">glambook</a></li>    
+      
+      <li class="navbar"><%= link_to "All Statuses", statuses_path %></li>
+    </ul>
+  </div>
+    <div class="container">
+    
+
 
 <%= yield %>
+  </div>
 
 </body>
 </html>
